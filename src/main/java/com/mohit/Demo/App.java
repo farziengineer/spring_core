@@ -29,7 +29,10 @@ public class App
 //    	obj.drive();
 //    	obj2.drive();
     	
-    	Tyre t = (Tyre)context.getBean("tyre");
-    	System.out.println(t);
+//    	Tyre t = (Tyre)context.getBean("tyre");
+//    	System.out.println(t);
+    	
+    	Car obj = (Car)context.getBean("car");
+    	obj.drive();
     }
 }
