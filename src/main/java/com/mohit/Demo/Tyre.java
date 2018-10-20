@@ -4,7 +4,9 @@ public class Tyre {
 
 	private String brand;
 
-	
+	Tyre(){
+		
+	}
 	
 	public Tyre(String brand) {
 		this.brand = brand;
