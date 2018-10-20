@@ -1,5 +1,7 @@
 package com.mohit.Demo;
 
+import javax.naming.Context;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,9 +24,12 @@ public class App
 //    	veh.drive();
     	
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-    	Vehicle obj = (Vehicle)context.getBean("car");
-    	Vehicle obj2 = (Vehicle)context.getBean("bike");
-    	obj.drive();
-    	obj2.drive();
+//    	Vehicle obj = (Vehicle)context.getBean("car");
+//    	Vehicle obj2 = (Vehicle)context.getBean("bike");
+//    	obj.drive();
+//    	obj2.drive();
+    	
+    	Tyre t = (Tyre)context.getBean("tyre");
+    	System.out.println(t);
     }
 }
