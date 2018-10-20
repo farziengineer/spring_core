@@ -22,7 +22,8 @@ public class App
     	veh.drive();
     	
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-    	Vehicle obj = (Vehicle)context.getBean("vehicle");
+    	Vehicle obj = (Vehicle)context.getBean("car");
+    	Vehicle obj2 = (Vehicle)context.getBean("bike");
     	obj.drive();
     }
 }
